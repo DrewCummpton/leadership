@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { PeopleService } from '../shared/people.service';
+import { JsonPipe } from '@angular/common';
  
 @Component({
   standalone: true,
-  imports: [],
+  imports: [ JsonPipe ],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
